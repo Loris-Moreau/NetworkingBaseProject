@@ -1,4 +1,5 @@
 #include <iostream>
+#include <regex>
 #include <SDL.h>
 #include <SDL_net.h>
 using namespace std;
@@ -42,13 +43,13 @@ int main(int argc, char* argv[])
 				{
 					answer = "Doom Bot - status : activated";
 				}
-				else if()
+				else if(strcmp(buffer, "Hello there") != 0)
 				{
-						
+					answer = "General Kenobi";
 				}
 				else
 				{
-					answer = "Message received";
+					answer = "Stop bothering me";
 				}
 				const int bytesSent = SDLNet_TCP_Send(clientSocket, answer.c_str(), answer.length() + 1);
 				if (bytesSent < answer.length() + 1)
