@@ -14,7 +14,7 @@ struct Message
 
 int main(int argc, char* argv[])
 {
-    string _host;
+    string _host = "localhost";
     string _name;
     string _sPort;
     int _port = 4242;
@@ -33,8 +33,8 @@ int main(int argc, char* argv[])
         BeginDrawing();
         ClearBackground(DARKGRAY);
         DrawText("Login", 155, 10, 40, WHITE); // Login Text
-        DrawText("ip", 25, 90, 25, WHITE);    // Ip Address
-        DrawText("port", 10, 160, 25, WHITE); // Port
+        DrawText("IP", 25, 90, 25, WHITE);    // Ip Address
+        DrawText("Port", 10, 160, 25, WHITE); // Port
         DrawText("name", 10, 230, 25, WHITE); // User Name
 
         DrawRectangle(70, 90, width - 100, 25, WHITE);
@@ -42,14 +42,14 @@ int main(int argc, char* argv[])
         DrawRectangle(70, 230, width - 100, 25, WHITE);
 
         int _inputChar = GetCharPressed();
-
+        
         if (_inputChar != 0)
         {
-            if (!_hostComplete)
+            /*if (!_hostComplete)
             {
                 _host += static_cast<char>(_inputChar);
             }
-            else if (!_portComplete)
+            else*/ if (!_portComplete)
             {
                 _sPort += static_cast<char>(_inputChar);
             }
@@ -60,11 +60,11 @@ int main(int argc, char* argv[])
         }
         if (IsKeyPressed(KEY_ENTER))
         {
-            if (!_hostComplete)
+            /*if (!_hostComplete)
             {
                 _hostComplete = true;
             }
-            else if (!_portComplete)
+            else */if (!_portComplete)
             {
                 _port = stoi(_sPort);
                 _portComplete = true;
@@ -177,7 +177,7 @@ int main(int argc, char* argv[])
                     return 1;
                 }
                 // Adds the message to the log, then clears the typing
-                log.push_back(Message{ _name, typing });
+                log.push_back(Message{_name, typing});
                 typing.clear();
             }
             
