@@ -28,6 +28,7 @@ int main(int argc, char* argv[])
     }
 
     TCPsocket clientSocket;
+    
     while (true)
     {
         clientSocket = SDLNet_TCP_Accept(serverSocket);

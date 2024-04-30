@@ -14,18 +14,20 @@ struct Message
 
 int main(int argc, char* argv[])
 {
-    constexpr int width = 400, height = 300;
-    InitWindow(width, height, "Login Window");
-    SetTargetFPS(60);
-
-    string _host;
-    string _sPort;
-    string _name;
+    string _host = "localhost";
+    string _name = "idiot";
+    string _sPort = "4242";
     int _port = 4242;
+    
     bool _hostComplete = false;
     bool _nameComplete = false;
     bool _portComplete = false;
 
+    ////////// Login Window //////////
+    constexpr int width = 400, height = 300;
+    InitWindow(width, height, "Login Window");
+    SetTargetFPS(60);
+    
     while (!WindowShouldClose())
     {
         BeginDrawing();
@@ -124,21 +126,22 @@ int main(int argc, char* argv[])
         SDLNet_Quit();
         return 1;
     }
-
+    
     string typing;
-    constexpr int _width2 = 500, _height2 = 750;
-    InitWindow(_width2, _height2, "mySpace V2");
+    vector<Message> log{Message{_name," has Joined"}};
+    
+    ////////// Main Window //////////
+    constexpr int width2 = 500, height2 = 750;
+    InitWindow(width2, height2, "mySpace V2");
     SetTargetFPS(60);
-
-    vector<Message> log{Message{"Waiting ... "}};
-
+    
     while (!WindowShouldClose())
     {
         BeginDrawing();
         ClearBackground(GRAY);
-        DrawText("Welcome", 150, 15, 25, WHITE);
-        DrawRectangle(20, 50, _width2 - 40, _height2 - 150, DARKGRAY);
-        DrawRectangle(20, _height2 - 90, _width2 - 40, 50, WHITE);
+        DrawText("Welcome ", 150, 15, 25, WHITE);
+        DrawRectangle(20, 50, width2 - 40, height2 - 150, DARKGRAY);
+        DrawRectangle(20, height2 - 90, width2 - 40, 50, WHITE);
 
         int _inputChar = GetCharPressed();
         if (_inputChar != 0)
@@ -166,7 +169,8 @@ int main(int argc, char* argv[])
                 log.push_back(Message{ _name, typing });
                 typing.clear();
             }
-            DrawText(typing.c_str(), 30, _height2 - 75, 25, BLACK);
+            
+            DrawText(typing.c_str(), 30, height2 - 75, 25, BLACK);
         }
 
         for (size_t i = 0; i < log.size(); i++)
