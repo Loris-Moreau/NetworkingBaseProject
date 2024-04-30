@@ -1,7 +1,43 @@
 #include <iostream>
-#include <SDL.h>
 #include <SDL_net.h>
+#include <thread>
+#include <vector>
 using namespace std;
+
+// handle each client connection
+void HandleClient(TCPsocket clientSocket)
+{
+    char nameBuffer[1024];
+    int bytesReadName = SDLNet_TCP_Recv(clientSocket, nameBuffer, sizeof(nameBuffer));
+    string clientName(nameBuffer);
+    if (bytesReadName > 0)
+    {
+        cout << "Client " << clientName << " joined\n";
+    }
+    
+    while (true)
+        {
+        char buffer[1024];
+        int bytesRead = SDLNet_TCP_Recv(clientSocket, buffer, sizeof(buffer));
+        if (bytesRead > 0)
+        {
+            cout << clientName << " : " << buffer << '\n';
+            string answer = "Message received";
+            int bytesSent = SDLNet_TCP_Send(clientSocket, answer.c_str(), answer.length() + 1);
+            if (bytesSent < answer.length() + 1)
+            {
+                cerr << "SDLNet TCP Send error : " << SDLNet_GetError() << '\n';
+                break;
+            }
+        }
+        else
+        {
+            cout << clientName << " disconnected\n";
+            break;
+        }
+    }
+    SDLNet_TCP_Close(clientSocket);
+}
 
 int main(int argc, char* argv[])
 {
@@ -27,37 +63,22 @@ int main(int argc, char* argv[])
         return 1;
     }
 
-    TCPsocket clientSocket;
+    vector<thread> clientThreads;
     
     while (true)
     {
-        clientSocket = SDLNet_TCP_Accept(serverSocket);
+        TCPsocket clientSocket = SDLNet_TCP_Accept(serverSocket);
         if (clientSocket)
         {
-            cout << "A client joined" << '\n';
-            while (true)
-            {
-                char buffer[1024];
-                int _bytesRead = SDLNet_TCP_Recv(clientSocket, buffer, sizeof(buffer));
-                if (_bytesRead > 0)
-                {
-                    cout << "Incoming message : " << buffer << '\n';
-                    string answer = "Message received";
-                    int _bytesSent = SDLNet_TCP_Send(clientSocket, answer.c_str(), answer.length() + 1);
-                    if (_bytesSent < answer.length() + 1)
-                    {
-                        cerr << "SDLNet TCP Send error : " << SDLNet_GetError() << '\n';
-                        break;
-                    }
-                }
-                else
-                {
-                    cout << "Client disconnected" << '\n';
-                    break;
-                }
-            }
-            SDLNet_TCP_Close(clientSocket);
+            // Start a new thread to handle the client connection
+            clientThreads.emplace_back(HandleClient, clientSocket);
         }
+    }
+
+    // Join all client threads
+    for (auto& thread : clientThreads)
+    {
+        thread.join();
     }
 
     SDLNet_TCP_Close(serverSocket);

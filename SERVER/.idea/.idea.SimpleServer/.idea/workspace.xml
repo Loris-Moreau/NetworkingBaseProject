@@ -16,6 +16,11 @@
       <change beforePath="$PROJECT_DIR$/../CLIENT/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CLIENT/x64/Debug/vc143.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SimpleServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SimpleServer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimpleServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleServer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleServer.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleServer.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleServer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleServer.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleServer.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/vc143.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/vc143.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +133,7 @@
       <workItem from="1714467157502" duration="1267000" />
       <workItem from="1714470535780" duration="1441000" />
       <workItem from="1714472200241" duration="222000" />
-      <workItem from="1714472580925" duration="818000" />
+      <workItem from="1714472580925" duration="2313000" />
     </task>
     <servers />
   </component>

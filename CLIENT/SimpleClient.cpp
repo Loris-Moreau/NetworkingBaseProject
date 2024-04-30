@@ -14,9 +14,9 @@ struct Message
 
 int main(int argc, char* argv[])
 {
-    string _host = "localhost";
-    string _name = "idiot";
-    string _sPort = "4242";
+    string _host;
+    string _name;
+    string _sPort;
     int _port = 4242;
     
     bool _hostComplete = false;
@@ -119,8 +119,8 @@ int main(int argc, char* argv[])
         return 1;
     }
 
-    TCPsocket _clientSocket = SDLNet_TCP_Open(&ip);
-    if (!_clientSocket)
+    TCPsocket clientSocket = SDLNet_TCP_Open(&ip);
+    if (!clientSocket)
     {
         cerr << "TCP Open error: " << SDLNet_GetError() << '\n';
         SDLNet_Quit();
@@ -129,6 +129,17 @@ int main(int argc, char* argv[])
     
     string typing;
     vector<Message> log{Message{_name," has Joined"}};
+
+    // Send the user's name to the server
+    int bytesSent = SDLNet_TCP_Send(clientSocket, _name.c_str(), _name.length() + 1);
+    if (bytesSent < _name.length() + 1) 
+    {
+        cerr << "SDLNet TCP Send error : " << SDLNet_GetError() << '\n';
+        SDLNet_TCP_Close(clientSocket);
+        SDLNet_Quit();
+        return 1;
+    }
+
     
     ////////// Main Window //////////
     constexpr int width2 = 500, height2 = 750;
@@ -157,11 +168,11 @@ int main(int argc, char* argv[])
             else if (IsKeyPressed(KEY_ENTER))
             {
                 // Send message to the server
-                int bytesSent = SDLNet_TCP_Send(_clientSocket, typing.c_str(), typing.length() + 1);
+                int bytesSent = SDLNet_TCP_Send(clientSocket, typing.c_str(), typing.length() + 1);
                 if (bytesSent < typing.length() + 1)
                 {
                     cerr << "SDLNet TCP Send error: " << SDLNet_GetError() << '\n';
-                    SDLNet_TCP_Close(_clientSocket);
+                    SDLNet_TCP_Close(clientSocket);
                     SDLNet_Quit();
                     return 1;
                 }
@@ -182,7 +193,7 @@ int main(int argc, char* argv[])
     }
     CloseWindow();
 
-    SDLNet_TCP_Close(_clientSocket);
+    SDLNet_TCP_Close(clientSocket);
     SDLNet_Quit();
     return 0;
 }
