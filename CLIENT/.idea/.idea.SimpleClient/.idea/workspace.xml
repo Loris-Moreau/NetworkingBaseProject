@@ -8,11 +8,416 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f80085f7-4f4b-4cba-a85f-02e3d8a7dbe3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/BUGS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/COPYING.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/README-SDL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/WhatsNew.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/cmake/sdl2-config-version.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/cmake/sdl2-config.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-android.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-cmake.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-directfb.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-dynapi.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-emscripten.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-gdk.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-gesture.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-git.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-hg.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-ios.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-kmsbsd.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-linux.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-macos.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-n3ds.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-nacl.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-ngage.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-os2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-pandora.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-platforms.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-porting.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-ps2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-psp.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-raspberrypi.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-riscos.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-touch.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-versions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-visualc.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-vita.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-wince.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-windows.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README-winrt.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/doxyfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/docs/release_checklist.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_assert.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_atomic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_audio.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_bits.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_blendmode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_clipboard.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config.h.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config.h.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_android.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_iphoneos.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_macosx.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_macosx.h.orig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_minimal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_pandora.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_psp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_windows.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_winrt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_wiz.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_copying.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_cpuinfo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_egl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_endian.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_error.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_events.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_filesystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_gamecontroller.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_gesture.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_guid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_haptic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_hidapi.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_hints.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_joystick.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_keyboard.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_keycode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_loadso.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_locale.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_log.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_messagebox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_metal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_misc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_mouse.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_mutex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_name.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_opengl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_opengl_glext.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_opengles.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_opengles2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_opengles2_gl2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_opengles2_gl2ext.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_opengles2_gl2platform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_opengles2_khrplatform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_pixels.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_platform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_power.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_quit.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_rect.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_render.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_revision.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_rwops.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_scancode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_sensor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_shape.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_stdinc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_surface.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_system.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_syswm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_assert.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_common.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_compare.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_crc32.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_font.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_fuzzer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_harness.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_images.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_log.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_md5.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_memory.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_random.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_thread.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_timer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_touch.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_types.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_version.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_video.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_vulkan.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/begin_code.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/include/close_code.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/lib/x64/SDL2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/lib/x64/SDL2.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/lib/x64/SDL2main.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/lib/x64/SDL2test.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/lib/x86/SDL2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/lib/x86/SDL2.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/lib/x86/SDL2main.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2-2.0.20/lib/x86/SDL2test.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/CHANGES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/COPYING.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/cmake/sdl2_image-config-version.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/cmake/sdl2_image-config.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/include/SDL_image.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/LICENSE.jpeg.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/LICENSE.png.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/LICENSE.tiff.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/LICENSE.webp.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/LICENSE.zlib.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/SDL2_image.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/SDL2_image.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/optional/LICENSE.tiff.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/optional/LICENSE.webp.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/optional/libtiff-5.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/optional/libwebp-7.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/LICENSE.jpeg.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/LICENSE.png.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/LICENSE.tiff.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/LICENSE.webp.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/LICENSE.zlib.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/SDL2_image.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/SDL2_image.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/optional/LICENSE.tiff.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/optional/LICENSE.webp.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/optional/libtiff-5.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/optional/libwebp-7.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_net-2.0.1/CHANGES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_net-2.0.1/COPYING.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_net-2.0.1/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_net-2.0.1/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_net-2.0.1/cmake/sdl2_net-config-version.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_net-2.0.1/cmake/sdl2_net-config.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_net-2.0.1/include/SDL_net.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_net-2.0.1/lib/x64/SDL2_net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_net-2.0.1/lib/x64/SDL2_net.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_net-2.0.1/lib/x86/SDL2_net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_net-2.0.1/lib/x86/SDL2_net.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/CHANGES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/COPYING.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/cmake/sdl2_ttf-config-version.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/cmake/sdl2_ttf-config.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/include/SDL_ttf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x64/LICENSE.freetype.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x64/LICENSE.harfbuzz.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x64/LICENSE.zlib.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x64/SDL2_ttf.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x64/SDL2_ttf.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x86/LICENSE.freetype.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x86/LICENSE.harfbuzz.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x86/LICENSE.zlib.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x86/SDL2_ttf.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x86/SDL2_ttf.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2_image.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2_net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/SDL2_ttf.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x64/Debug/raylib.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/BUGS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/COPYING.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/README-SDL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/WhatsNew.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/cmake/sdl2-config-version.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/cmake/sdl2-config.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-android.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-cmake.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-directfb.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-dynapi.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-emscripten.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-gdk.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-gesture.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-git.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-hg.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-ios.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-kmsbsd.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-linux.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-macos.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-n3ds.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-nacl.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-ngage.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-os2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-pandora.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-platforms.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-porting.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-ps2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-psp.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-raspberrypi.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-riscos.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-touch.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-versions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-visualc.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-vita.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-wince.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-windows.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README-winrt.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/doxyfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/docs/release_checklist.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_assert.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_atomic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_audio.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_bits.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_blendmode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_clipboard.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config.h.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config.h.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_android.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_iphoneos.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_macosx.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_macosx.h.orig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_minimal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_pandora.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_psp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_windows.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_winrt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_config_wiz.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_copying.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_cpuinfo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_egl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_endian.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_error.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_events.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_filesystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_gamecontroller.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_gesture.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_guid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_haptic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_hidapi.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_hints.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_joystick.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_keyboard.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_keycode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_loadso.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_locale.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_log.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_messagebox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_metal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_misc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_mouse.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_mutex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_name.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_opengl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_opengl_glext.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_opengles.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_opengles2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_opengles2_gl2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_opengles2_gl2ext.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_opengles2_gl2platform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_opengles2_khrplatform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_pixels.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_platform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_power.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_quit.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_rect.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_render.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_revision.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_rwops.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_scancode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_sensor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_shape.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_stdinc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_surface.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_system.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_syswm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_assert.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_common.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_compare.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_crc32.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_font.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_fuzzer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_harness.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_images.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_log.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_md5.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_memory.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_test_random.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_thread.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_timer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_touch.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_types.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_version.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_video.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/SDL_vulkan.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/begin_code.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/include/close_code.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/lib/x64/SDL2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/lib/x64/SDL2.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/lib/x64/SDL2main.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/lib/x64/SDL2test.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/lib/x86/SDL2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/lib/x86/SDL2.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/lib/x86/SDL2main.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2-2.0.20/lib/x86/SDL2test.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/CHANGES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/COPYING.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/cmake/sdl2_image-config-version.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/cmake/sdl2_image-config.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/include/SDL_image.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/LICENSE.jpeg.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/LICENSE.png.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/LICENSE.tiff.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/LICENSE.webp.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/LICENSE.zlib.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/SDL2_image.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/SDL2_image.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/optional/LICENSE.tiff.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/optional/LICENSE.webp.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/optional/libtiff-5.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x64/optional/libwebp-7.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/LICENSE.jpeg.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/LICENSE.png.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/LICENSE.tiff.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/LICENSE.webp.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/LICENSE.zlib.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/SDL2_image.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/SDL2_image.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/optional/LICENSE.tiff.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/optional/LICENSE.webp.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/optional/libtiff-5.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_image-2.0.5/lib/x86/optional/libwebp-7.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_net-2.0.1/CHANGES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_net-2.0.1/COPYING.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_net-2.0.1/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_net-2.0.1/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_net-2.0.1/cmake/sdl2_net-config-version.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_net-2.0.1/cmake/sdl2_net-config.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_net-2.0.1/include/SDL_net.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_net-2.0.1/lib/x64/SDL2_net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_net-2.0.1/lib/x64/SDL2_net.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_net-2.0.1/lib/x86/SDL2_net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_net-2.0.1/lib/x86/SDL2_net.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/CHANGES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/COPYING.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/cmake/sdl2_ttf-config-version.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/cmake/sdl2_ttf-config.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/include/SDL_ttf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x64/LICENSE.freetype.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x64/LICENSE.harfbuzz.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x64/LICENSE.zlib.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x64/SDL2_ttf.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x64/SDL2_ttf.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x86/LICENSE.freetype.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x86/LICENSE.harfbuzz.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x86/LICENSE.zlib.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x86/SDL2_ttf.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2/SDL2_ttf-2.0.18/lib/x86/SDL2_ttf.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2_image.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2_net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SDL2_ttf.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ServerClient.bat.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SimpleClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SimpleClient/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimpleClient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleClient.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/CL.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/vc143.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/.idea/.idea.SimpleServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/.idea/.idea.SimpleServer/.idea/workspace.xml" afterDir="false" />
@@ -20,8 +425,6 @@
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/CL.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/link.write.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.pdb" afterDir="false" />
     </list>
@@ -34,8 +437,139 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/loris.moreau/Documents/GitHub/NetworkingBaseProject/CLIENT/SimpleClient.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/loris.moreau/Documents/GitHub/NetworkingBaseProject/CLIENT/SimpleClient.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SDL2/SDL2_net-2.0.1/include/SDL_net.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -48,30 +582,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;C++ Project.NetworkingBaseProject.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "C++ Project.NetworkingBaseProject.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C++",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\loris.moreau\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\loris.moreau\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\loris.moreau\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\loris.moreau\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\loris.moreau\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\loris.moreau\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="NetworkingBaseProject" type="CppProject" factoryName="C++ Project">
       <configuration_1>
@@ -135,6 +669,7 @@
       <workItem from="1714378214963" duration="44000" />
       <workItem from="1714379799356" duration="6222000" />
       <workItem from="1714386137454" duration="1128000" />
+      <workItem from="1714461211790" duration="5858000" />
     </task>
     <servers />
   </component>
