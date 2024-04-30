@@ -43,13 +43,14 @@ int main(int argc, char* argv[])
             IPaddress* clientIP = SDLNet_TCP_GetPeerAddress(clientSocket);
             Uint32 ipAddress = SDLNet_Read32(clientIP);
             cout << "Client " << ipAddress << " reached the server" << '\n';
-
+            cout << "->" << ipAddress << '\n';
+            
             SDLNet_AddSocket(set, reinterpret_cast<SDLNet_GenericSocket>(clientSocket));
 
             char buffer[1024];
 
-            if (SDLNet_CheckSockets(set, 10) != 0) // Timeout of 10ms
-            { 
+            if (SDLNet_CheckSockets(set, 0) != 0) // Timeout of 10ms
+            {
                 int bytesRead = SDLNet_TCP_Recv(clientSocket, buffer, sizeof(buffer));
                 if (bytesRead > 0)
                 {
@@ -65,7 +66,7 @@ int main(int argc, char* argv[])
                     }
                     else
                     {
-                        answer = "Stop";
+                        answer = "Stop, you have violated the law !";
                     }
                     const int bytesSent = SDLNet_TCP_Send(clientSocket, answer.c_str(), answer.length() + 1);
                     if (bytesSent < answer.length() + 1)
@@ -77,7 +78,7 @@ int main(int argc, char* argv[])
             }
         }
     }
-
+    
     SDLNet_FreeSocketSet(set);
     SDLNet_Quit();
     return 0;

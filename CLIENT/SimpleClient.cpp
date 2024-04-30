@@ -7,27 +7,32 @@
 
 using namespace std;
 
-struct Message {
+struct Message
+{
     string userName = "idiot";
     bool fromMe = false;
     string content;
 };
 
-string GetUserName() {
+string GetUserName()
+{
     string _name = "Anon";
     return _name;
 }
 
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[])
+{
     // Initialize SDL_net
-    if (SDLNet_Init() == -1) {
+    if (SDLNet_Init() == -1)
+    {
         cerr << "SDLNet_Init error : " << SDLNet_GetError() << '\n';
         return 1;
     }
 
     // Resolve the server's IP address and port
     IPaddress ip;
-    if (SDLNet_ResolveHost(&ip, "localhost" , 4242) == -1) {
+    if (SDLNet_ResolveHost(&ip, "localhost" , 4242) == -1)
+    {
         cerr << "Resolve Host error : " << SDLNet_GetError() << '\n';
         SDLNet_Quit();
         return 1;
@@ -35,7 +40,8 @@ int main(int argc, char* argv[]) {
 
     // Open a TCP connection to the server
     const TCPsocket clientSocket = SDLNet_TCP_Open(&ip);
-    if (!clientSocket) {
+    if (!clientSocket)
+    {
         cerr << "TCP Open error : " << SDLNet_GetError() << '\n';
         SDLNet_Quit();
         return 1;
@@ -52,7 +58,8 @@ int main(int argc, char* argv[]) {
     // String to store user input
     string typing;
 
-    while (!WindowShouldClose()) {
+    while (!WindowShouldClose())
+    {
         BeginDrawing();
         ClearBackground(GRAY);
 
@@ -74,10 +81,12 @@ int main(int argc, char* argv[]) {
 
         // Handle user input
         int inputChar = GetCharPressed();
-        if (inputChar != 0) { // A character is pressed on the keyboard
+        if (inputChar != 0) // A character is pressed on the keyboard
+        {
             typing += static_cast<char>(inputChar);
         }
-        if (!typing.empty()) {
+        if (!typing.empty())
+        {
             if (IsKeyPressed(KEY_BACKSPACE)) typing.pop_back();
             else if (IsKeyPressed(KEY_ENTER))
             {
@@ -85,7 +94,8 @@ int main(int argc, char* argv[]) {
                 string message = typing;
 
                 const int bytesSent = SDLNet_TCP_Send(clientSocket, message.c_str(), message.length() + 1);
-                if (bytesSent < message.length() + 1) {
+                if (bytesSent < message.length() + 1)
+                {
                     cerr << "SDLNet TCP Send error : " << SDLNet_GetError() << '\n';
                     SDLNet_TCP_Close(clientSocket);
                     SDLNet_Quit();
@@ -109,10 +119,9 @@ int main(int argc, char* argv[]) {
                     }
 
                     cout << "Incoming response : " << buffer << '\n';
-}
-                    log.push_back(Message{GetUserName(), true, typing});
-                    typing.clear();
-                
+                }
+                log.push_back(Message{GetUserName(), true, typing});
+                typing.clear();
             }
         }
     }
