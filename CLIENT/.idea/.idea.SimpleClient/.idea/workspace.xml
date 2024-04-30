@@ -12,12 +12,14 @@
       <change beforePath="$PROJECT_DIR$/SimpleClient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleClient.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/CL.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/vc143.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/.idea/.idea.SimpleServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/.idea/.idea.SimpleServer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/SimpleServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/SimpleServer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/CL.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.pdb" afterDir="false" />
     </list>
@@ -265,7 +267,8 @@
       <workItem from="1714461211790" duration="5858000" />
       <workItem from="1714467157500" duration="1000" />
       <workItem from="1714467165387" duration="1259000" />
-      <workItem from="1714470572468" duration="803000" />
+      <workItem from="1714470572468" duration="1613000" />
+      <workItem from="1714472261958" duration="156000" />
     </task>
     <servers />
   </component>
