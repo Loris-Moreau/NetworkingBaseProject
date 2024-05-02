@@ -106,19 +106,20 @@ int main(int argc, char* argv[])
     }
     CloseWindow();
 
+    
+    //Initialisation & Error Handling
+    
     if (SDLNet_Init() == -1)
     {
         cerr << "SDLNet_Init error: " << SDLNet_GetError() << '\n';
         return 1;
     }
-    
     IPaddress ip;
     if (SDLNet_ResolveHost(&ip, _host.c_str(), _port) == -1)
     {
         cerr << "Resolver Host error: " << SDLNet_GetError() << '\n';
         return 1;
     }
-
     TCPsocket clientSocket = SDLNet_TCP_Open(&ip);
     if (!clientSocket)
     {
@@ -127,9 +128,11 @@ int main(int argc, char* argv[])
         return 1;
     }
     
+    
+    //Main Communication
     string typing;
-    vector<Message> log{Message{_name," has Joined"}};
-
+    string receivedText;
+    
     // Send the user's name to the server
     int bytesSent = SDLNet_TCP_Send(clientSocket, _name.c_str(), _name.length() + 1);
     if (bytesSent < _name.length() + 1) 
@@ -139,18 +142,19 @@ int main(int argc, char* argv[])
         SDLNet_Quit();
         return 1;
     }
-
+    vector<Message> log{Message{_name," has Joined"}};
     
     ////////// Main Window //////////
     constexpr int width2 = 500, height2 = 750;
-    InitWindow(width2, height2, "mySpace V2");
+    InitWindow(width2, height2, "Chat Box");
     SetTargetFPS(60);
-    
+
+    char buffer[1024];
     while (!WindowShouldClose())
     {
         BeginDrawing();
         ClearBackground(GRAY);
-        DrawText("Welcome ", 150, 15, 25, WHITE);
+        DrawText(TextFormat("Welcome ", _name.c_str()), 150, 15, 25, WHITE);
         DrawRectangle(20, 50, width2 - 40, height2 - 150, DARKGRAY);
         DrawRectangle(20, height2 - 90, width2 - 40, 50, WHITE);
 
@@ -168,27 +172,49 @@ int main(int argc, char* argv[])
             else if (IsKeyPressed(KEY_ENTER))
             {
                 // Send message to the server
-                int bytesSent = SDLNet_TCP_Send(clientSocket, typing.c_str(), typing.length() + 1);
-                if (bytesSent < typing.length() + 1)
+                int bytesSent2 = SDLNet_TCP_Send(clientSocket, typing.c_str(), typing.length() + 1);
+                if (bytesSent2 < typing.length() + 1)
                 {
                     cerr << "SDLNet TCP Send error: " << SDLNet_GetError() << '\n';
                     SDLNet_TCP_Close(clientSocket);
                     SDLNet_Quit();
                     return 1;
                 }
+                
+                int bytesRead = SDLNet_TCP_Recv(clientSocket, buffer, sizeof(buffer));
+                if (bytesRead > 0)
+                {
+                    log.push_back(Message{_name, buffer});
+                }
+                
                 // Adds the message to the log, then clears the typing
-                log.push_back(Message{_name, typing});
+                //log.push_back(Message{_name, typing});
                 typing.clear();
             }
             
             DrawText(typing.c_str(), 30, height2 - 75, 25, BLACK);
         }
 
+        /*char nameBuffer[1024];
+        int bytesReadName = SDLNet_TCP_Recv(clientSocket, nameBuffer, sizeof(nameBuffer));
+        if (bytesReadName > 0)
+        {
+            _name = nameBuffer;
+            vector<Message> log{Message{_name," has Joined"}};
+        }*/
+        
+        /*int bytesRead = SDLNet_TCP_Recv(clientSocket, buffer, sizeof(buffer));
+        if (bytesRead > 0)
+        {
+            log.push_back(Message{_name, buffer});
+        }*/
         for (size_t i = 0; i < log.size(); i++)
         {
             DrawText(TextFormat("[%s] %s", log[i].sender.c_str(), log[i].content.c_str()), 30, 75 + (i * 30), 15, SKYBLUE);
+                
+            //DrawText(TextFormat("[%s] %s", log[i].sender.c_str(),buffer),30, 75 + (i * 30), 15, SKYBLUE);
         }
-
+        
         EndDrawing();
     }
     CloseWindow();

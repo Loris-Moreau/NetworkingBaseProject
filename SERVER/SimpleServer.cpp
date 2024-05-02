@@ -4,9 +4,12 @@
 #include <vector>
 using namespace std;
 
+SDLNet_SocketSet set = SDLNet_AllocSocketSet(8);
+
 // handle each client connection
 void HandleClient(TCPsocket clientSocket)
 {
+    //User Name Handling 
     char nameBuffer[1024];
     int bytesReadName = SDLNet_TCP_Recv(clientSocket, nameBuffer, sizeof(nameBuffer));
     string clientName(nameBuffer);
@@ -15,14 +18,15 @@ void HandleClient(TCPsocket clientSocket)
         cout << "Client " << clientName << " joined\n";
     }
     
+    //Message Handling 
     while (true)
-        {
+    {
         char buffer[1024];
         int bytesRead = SDLNet_TCP_Recv(clientSocket, buffer, sizeof(buffer));
         if (bytesRead > 0)
         {
             cout << clientName << " : " << buffer << '\n';
-            string answer = "Message received";
+            string answer = buffer;
             int bytesSent = SDLNet_TCP_Send(clientSocket, answer.c_str(), answer.length() + 1);
             if (bytesSent < answer.length() + 1)
             {
@@ -62,25 +66,35 @@ int main(int argc, char* argv[])
         SDLNet_Quit();
         return 1;
     }
-
-    vector<thread> clientThreads;
+    
+    
+    //vector<thread> clientThreads;
     
     while (true)
     {
         TCPsocket clientSocket = SDLNet_TCP_Accept(serverSocket);
-        if (clientSocket)
+        /*if (clientSocket)
         {
             // Start a new thread to handle the client connection
             clientThreads.emplace_back(HandleClient, clientSocket);
+        }*/
+        clientSocket = SDLNet_TCP_Accept(serverSocket);
+        if (clientSocket)
+        {
+            cout << "A client reached the server!" << '\n';
+            SDLNet_AddSocket(set, reinterpret_cast<SDLNet_GenericSocket>(clientSocket));
+            break;
         }
     }
+    
 
+    
     // Join all client threads
-    for (auto& thread : clientThreads)
+    /*for (auto& thread : clientThreads)
     {
         thread.join();
-    }
-
+    }*/
+    
     SDLNet_TCP_Close(serverSocket);
     SDLNet_Quit();
     return 0;
