@@ -19,7 +19,7 @@ int main(int argc, char* argv[])
     string _sPort;
     int _port = 4242;
     
-    bool _hostComplete = false;
+    //bool _hostComplete = true;
     bool _nameComplete = false;
     bool _portComplete = false;
 
@@ -45,11 +45,7 @@ int main(int argc, char* argv[])
         
         if (_inputChar != 0)
         {
-            /*if (!_hostComplete)
-            {
-                _host += static_cast<char>(_inputChar);
-            }
-            else*/ if (!_portComplete)
+            if (!_portComplete)
             {
                 _sPort += static_cast<char>(_inputChar);
             }
@@ -60,11 +56,7 @@ int main(int argc, char* argv[])
         }
         if (IsKeyPressed(KEY_ENTER))
         {
-            /*if (!_hostComplete)
-            {
-                _hostComplete = true;
-            }
-            else */if (!_portComplete)
+            if (!_portComplete)
             {
                 _port = stoi(_sPort);
                 _portComplete = true;
@@ -77,17 +69,14 @@ int main(int argc, char* argv[])
         }
         else if (IsKeyPressed(KEY_BACKSPACE))
         {
-            if (_hostComplete && !_name.empty())
-            {
-                _name.pop_back();
-            }
-            else if (_portComplete && !_sPort.empty())
+            
+            if (_portComplete && !_sPort.empty())
             {
                 _sPort.pop_back();
             }
-            else if (!_host.empty())
+            else if (!_name.empty())
             {
-                _host.pop_back();
+                _name.pop_back();
             }
         }
         if (!_host.empty())

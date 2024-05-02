@@ -18,7 +18,6 @@
       <change beforePath="$PROJECT_DIR$/../SERVER/SimpleServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/SimpleServer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/link.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.pdb" afterDir="false" />
     </list>
@@ -142,7 +141,7 @@
       <workItem from="1714472584654" duration="2312000" />
       <workItem from="1714476519882" duration="1797000" />
       <workItem from="1714478401569" duration="452000" />
-      <workItem from="1714637585788" duration="4506000" />
+      <workItem from="1714637585788" duration="5541000" />
     </task>
     <servers />
   </component>
