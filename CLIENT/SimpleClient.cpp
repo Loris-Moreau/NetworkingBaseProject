@@ -14,78 +14,66 @@ struct Message
 
 int main(int argc, char* argv[])
 {
-    string _host = "localhost";
-    string _name;
-    string _sPort;
-    int _port = 4242;
-    
-    //bool _hostComplete = true;
-    bool _nameComplete = false;
-    bool _portComplete = false;
-
-    ////////// Login Window //////////
     constexpr int width = 400, height = 300;
-    InitWindow(width, height, "Login Window");
+    InitWindow(width, height, "Login");
     SetTargetFPS(60);
+
+    string host = "localhost";
+    string s_port;
+    string _name;
     
+    int port = 4242;
+    bool nameComplete = false;
+    bool portComplete = false;
+
     while (!WindowShouldClose())
     {
         BeginDrawing();
         ClearBackground(DARKGRAY);
-        DrawText("Login", 155, 10, 40, WHITE); // Login Text
-        DrawText("IP", 25, 90, 25, WHITE);    // Ip Address
-        DrawText("Port", 10, 160, 25, WHITE); // Port
-        DrawText("name", 10, 230, 25, WHITE); // User Name
+        DrawText("Login ", 155, 10, 40, WHITE); // Login Text
+        DrawText("Server : ", 10, 90, 25, WHITE); // Server Text
+        DrawText(host.c_str(), 130, 90, 25, WHITE); // Host Text
+        DrawText("port ", 10, 160, 25, WHITE); // Port
+        DrawText("name ", 10, 230, 25, WHITE); // Name
 
-        DrawRectangle(70, 90, width - 100, 25, WHITE);
         DrawRectangle(70, 160, width - 100, 25, WHITE);
         DrawRectangle(70, 230, width - 100, 25, WHITE);
 
-        int _inputChar = GetCharPressed();
-        
-        if (_inputChar != 0)
+        int inputChar = GetCharPressed();
+        if (inputChar != 0)
         {
-            if (!_portComplete)
+            if (!portComplete)
             {
-                _sPort += static_cast<char>(_inputChar);
+                s_port += static_cast<char>(inputChar);
             }
-            else if (!_nameComplete)
+            else if (!nameComplete)
             {
-                _name += static_cast<char>(_inputChar);
+                _name += static_cast<char>(inputChar);
             }
         }
         if (IsKeyPressed(KEY_ENTER))
         {
-            if (!_portComplete)
+            if (!portComplete)
             {
-                _port = stoi(_sPort);
-                _portComplete = true;
+                port = stoi(s_port);
+                portComplete = true;
             }
             else if (!_name.empty())
             {
-                _nameComplete = true;
+                nameComplete = true;
                 break;
             }
         }
         else if (IsKeyPressed(KEY_BACKSPACE))
         {
-            
-            if (_portComplete && !_sPort.empty())
+            if (portComplete && !s_port.empty())
             {
-                _sPort.pop_back();
-            }
-            else if (!_name.empty())
-            {
-                _name.pop_back();
+                s_port.pop_back();
             }
         }
-        if (!_host.empty())
+        if (!s_port.empty())
         {
-            DrawText(_host.c_str(), 75, 90, 25, BLACK);
-        }
-        if (!_sPort.empty())
-        {
-            DrawText(_sPort.c_str(), 75, 160, 25, BLACK);
+            DrawText(s_port.c_str(), 75, 160, 25, BLACK);
         }
         if (!_name.empty())
         {
@@ -95,20 +83,19 @@ int main(int argc, char* argv[])
     }
     CloseWindow();
 
-    
-    //Initialisation & Error Handling
-    
     if (SDLNet_Init() == -1)
     {
         cerr << "SDLNet_Init error: " << SDLNet_GetError() << '\n';
         return 1;
     }
+
     IPaddress ip;
-    if (SDLNet_ResolveHost(&ip, _host.c_str(), _port) == -1)
+    if (SDLNet_ResolveHost(&ip, host.c_str(), port) == -1)
     {
         cerr << "Resolver Host error: " << SDLNet_GetError() << '\n';
         return 1;
     }
+
     TCPsocket clientSocket = SDLNet_TCP_Open(&ip);
     if (!clientSocket)
     {
@@ -116,29 +103,42 @@ int main(int argc, char* argv[])
         SDLNet_Quit();
         return 1;
     }
-    
-    
-    //Main Communication
+
+    SDLNet_SocketSet clientSocketSet = SDLNet_AllocSocketSet(1); 
+    if (!clientSocketSet)
+    {
+        cerr << "SDLNet_AllocSocketSet error: " << SDLNet_GetError() << '\n';
+        SDLNet_TCP_Close(clientSocket);
+        SDLNet_Quit();
+        return 1;
+    }
+
+    if (SDLNet_TCP_AddSocket(clientSocketSet, clientSocket) == -1)
+    {
+        cerr << "SDLNet_TCP_AddSocket error: " << SDLNet_GetError() << '\n';
+        SDLNet_TCP_Close(clientSocket);
+        SDLNet_Quit();
+        return 1;
+    }
+
     string typing;
-    string receivedText;
-    
-    // Send the user's name to the server
+
+    // UserName Sending
     int bytesSent = SDLNet_TCP_Send(clientSocket, _name.c_str(), _name.length() + 1);
-    if (bytesSent < _name.length() + 1) 
+    if (bytesSent < _name.length() + 1)
     {
         cerr << "SDLNet TCP Send error : " << SDLNet_GetError() << '\n';
         SDLNet_TCP_Close(clientSocket);
         SDLNet_Quit();
         return 1;
     }
-    vector<Message> log{Message{_name," has Joined"}};
-    
-    ////////// Main Window //////////
-    constexpr int width2 = 500, height2 = 750;
-    InitWindow(width2, height2, "Chat Box");
+
+    const int width2 = 500, height2 = 750;
+    InitWindow(width2, height2, "Chat");
     SetTargetFPS(60);
 
-    char buffer[1024];
+    vector<Message> log{Message{"Welcome to Hell"}};
+
     while (!WindowShouldClose())
     {
         BeginDrawing();
@@ -147,10 +147,10 @@ int main(int argc, char* argv[])
         DrawRectangle(20, 50, width2 - 40, height2 - 150, DARKGRAY);
         DrawRectangle(20, height2 - 90, width2 - 40, 50, WHITE);
 
-        int _inputChar = GetCharPressed();
-        if (_inputChar != 0)
+        int inputChar = GetCharPressed();
+        if (inputChar != 0)
         {
-            typing += static_cast<char>(_inputChar);
+            typing += static_cast<char>(inputChar);
         }
         if (!typing.empty())
         {
@@ -161,54 +161,48 @@ int main(int argc, char* argv[])
             else if (IsKeyPressed(KEY_ENTER))
             {
                 // Send message to the server
-                int bytesSent2 = SDLNet_TCP_Send(clientSocket, typing.c_str(), typing.length() + 1);
-                if (bytesSent2 < typing.length() + 1)
+                int bytesSent = SDLNet_TCP_Send(clientSocket, typing.c_str(), typing.length() + 1);
+                if (bytesSent < typing.length() + 1)
                 {
                     cerr << "SDLNet TCP Send error: " << SDLNet_GetError() << '\n';
                     SDLNet_TCP_Close(clientSocket);
                     SDLNet_Quit();
                     return 1;
                 }
-                
-                int bytesRead = SDLNet_TCP_Recv(clientSocket, buffer, sizeof(buffer));
-                if (bytesRead > 0)
-                {
-                    log.push_back(Message{_name, buffer});
-                }
-                
-                // Adds the message to the log, then clears the typing
-                //log.push_back(Message{_name, typing});
+                log.push_back(Message{ _name, typing });
                 typing.clear();
             }
-            
             DrawText(typing.c_str(), 30, height2 - 75, 25, BLACK);
         }
 
-        /*char nameBuffer[1024];
-        int bytesReadName = SDLNet_TCP_Recv(clientSocket, nameBuffer, sizeof(nameBuffer));
-        if (bytesReadName > 0)
+        // Client Messages
+        if (SDLNet_CheckSockets(clientSocketSet, 0) > 0 && SDLNet_SocketReady(clientSocket))
         {
-            _name = nameBuffer;
-            vector<Message> log{Message{_name," has Joined"}};
-        }*/
-        
-        /*int bytesRead = SDLNet_TCP_Recv(clientSocket, buffer, sizeof(buffer));
-        if (bytesRead > 0)
-        {
-            log.push_back(Message{_name, buffer});
-        }*/
+            char buffer[1024];
+            int bytesRead = SDLNet_TCP_Recv(clientSocket, buffer, sizeof(buffer));
+            if (bytesRead > 0)
+            {
+                string receivedMessage(buffer);
+                log.push_back(Message{ _name, receivedMessage });
+            }
+            else
+            {
+                cerr << _name <<" Disconnected" << '\n';
+                break;
+            }
+        }
+
         for (size_t i = 0; i < log.size(); i++)
         {
-            DrawText(TextFormat("[%s] %s", log[i].sender.c_str(), log[i].content.c_str()), 30, 75 + (i * 30), 15, SKYBLUE);
-                
-            //DrawText(TextFormat("[%s] %s", log[i].sender.c_str(),buffer),30, 75 + (i * 30), 15, SKYBLUE);
+            DrawText(TextFormat("[%s] %s", log[i].sender.c_str(), log[i].content.c_str()), 30, 75 + (i * 30), 15, BLUE);
         }
-        
         EndDrawing();
     }
     CloseWindow();
 
     SDLNet_TCP_Close(clientSocket);
+    SDLNet_FreeSocketSet(clientSocketSet); 
     SDLNet_Quit();
+    
     return 0;
 }
