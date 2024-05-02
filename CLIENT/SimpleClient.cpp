@@ -21,6 +21,7 @@ int main(int argc, char* argv[])
     string host = "localhost";
     string s_port;
     string _name;
+    string _otherName;
     
     int port = 4242;
     bool nameComplete = false;
@@ -132,7 +133,7 @@ int main(int argc, char* argv[])
         SDLNet_Quit();
         return 1;
     }
-
+    
     const int width2 = 500, height2 = 750;
     InitWindow(width2, height2, "Chat");
     SetTargetFPS(60);
@@ -187,7 +188,7 @@ int main(int argc, char* argv[])
             }
             else
             {
-                cerr << _name <<" Disconnected" << '\n';
+                cerr << _name <<" was killed" << '\n';
                 break;
             }
         }

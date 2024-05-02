@@ -10,14 +10,10 @@
     <list default="true" id="f35fe942-dee7-4ef2-8207-602f1d0ed5c4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../CLIENT/.idea/.idea.SimpleClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CLIENT/.idea/.idea.SimpleClient/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CLIENT/SimpleClient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../CLIENT/SimpleClient.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLIENT/x64/Debug/SimpleClient.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../CLIENT/x64/Debug/SimpleClient.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLIENT/x64/Debug/SimpleClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CLIENT/x64/Debug/SimpleClient.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLIENT/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../CLIENT/x64/Debug/vc143.idb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLIENT/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CLIENT/x64/Debug/vc143.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SimpleServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SimpleServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleServer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleServer.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleServer.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleServer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleServer.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleServer.tlog/CL.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleServer.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleServer.tlog/link.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/vc143.pdb" afterDir="false" />
@@ -137,6 +133,7 @@
       <workItem from="1714476528731" duration="1790000" />
       <workItem from="1714478397776" duration="458000" />
       <workItem from="1714637589734" duration="6231000" />
+      <workItem from="1714643874072" duration="1872000" />
     </task>
     <servers />
   </component>
