@@ -8,15 +8,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f80085f7-4f4b-4cba-a85f-02e3d8a7dbe3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.SimpleClient/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chatting.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chatting.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Login.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Login.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scenes.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scenes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimpleClient/x64/Debug/SimpleClient.tlog/CL.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimpleClient/x64/Debug/SimpleClient.tlog/SimpleClient.lastbuildstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimpleClient/x64/Debug/SimpleClient.tlog/unsuccessfulbuild" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimpleClient/x64/Debug/vc143.idb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimpleClient/x64/Debug/vc143.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/.idea/.idea.SimpleServer/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/SimpleServer/x64/Debug/SimpleServer.exe.recipe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/SimpleServer/x64/Debug/SimpleServer.ilk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/SimpleServer/x64/Debug/SimpleServer.tlog/CL.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/SimpleServer/x64/Debug/SimpleServer.tlog/CL.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/SimpleServer/x64/Debug/SimpleServer.tlog/CL.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/SimpleServer/x64/Debug/SimpleServer.tlog/Cl.items.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/SimpleServer/x64/Debug/SimpleServer.tlog/SimpleServer.lastbuildstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/SimpleServer/x64/Debug/SimpleServer.tlog/link.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/SimpleServer/x64/Debug/SimpleServer.tlog/link.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/SimpleServer/x64/Debug/SimpleServer.tlog/link.secondary.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/SimpleServer/x64/Debug/SimpleServer.tlog/link.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/SimpleServer/x64/Debug/vc143.idb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SERVER/SimpleServer/x64/Debug/vc143.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SimpleClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SimpleClient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetworkingBaseProject.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/NetworkingBaseProject.vcxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimpleClient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleClient.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/.idea/.idea.SimpleServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/.idea/.idea.SimpleServer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/SimpleServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/SimpleServer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.idb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,30 +65,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;C++ Project.NetworkingBaseProject.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C++&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "C++ Project.NetworkingBaseProject.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C++",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\loris.moreau\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\loris.moreau\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\loris.moreau\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\morea\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\morea\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\morea\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="NetworkingBaseProject" type="CppProject" factoryName="C++ Project">
       <configuration_1>
@@ -139,6 +164,7 @@
       <workItem from="1714478401569" duration="452000" />
       <workItem from="1714637585788" duration="6232000" />
       <workItem from="1714643878453" duration="1277000" />
+      <workItem from="1715427929900" duration="3175000" />
     </task>
     <servers />
   </component>

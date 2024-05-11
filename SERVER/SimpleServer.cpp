@@ -1,117 +1,128 @@
-#include <iostream>
-#include <mutex>
 #include <SDL.h>
 #include <SDL_net.h>
-#include <thread>
+#include <iostream>
 #include <vector>
+#include <map>
 using namespace std;
 
-struct UserData
-{
-    TCPsocket socket;
-    string name;
-};
-
-vector<UserData> clients;
-SDLNet_SocketSet set = SDLNet_AllocSocketSet(8);	//Put the maximum number of sockets
-//mutex mtx;
-
-void HandleClient(TCPsocket clientSocket)
-{
-    char nameBuffer[1024];
-    int bytesReadName = SDLNet_TCP_Recv(clientSocket, nameBuffer, sizeof(nameBuffer));
-    string userName(nameBuffer);
-    if (bytesReadName > 0)
-    {
-        cout << "User " << userName << " has joined the server\n";
-    }
-
-    char buffer[1024];
-    while (true)
-    {
-        if(SDLNet_CheckSockets(set, 0)!=0)	//Here, 0 is the timeout
-        {
-            int bytesRead = SDLNet_TCP_Recv(clientSocket, buffer, sizeof(buffer));
-            if (bytesRead > 0)
-            {
-                cout << userName << " : " << buffer << '\n';
-
-                // Broadcast the message to all clients
-                string message = string(buffer);
-                {
-                    //lock_guard<mutex> lock(mtx);
-                    for (UserData& client : clients)
-                    {
-                        if (client.socket != clientSocket)
-                        {
-                            int bytesSent = SDLNet_TCP_Send(client.socket, message.c_str(), message.length() + 1);
-                            if (bytesSent < message.length() + 1)
-                            {
-                                cerr << "SDLNet TCP Send error: " << SDLNet_GetError() << '\n';
-                            }
-                        }
-                    }
-                
-                }
-            }
-        }
-        else
-        {
-            SDLNet_TCP_Close(clientSocket);
-            {
-                //lock_guard<mutex> lock(mtx);
-                clients.erase(remove_if(clients.begin(), clients.end(),
-                [clientSocket](const UserData& client)
-                { return client.socket == clientSocket;}), clients.end());
-            }
-            cout << userName << " has disconnected." << '\n';
-            break;
-        }
-    }
-}
+map<TCPsocket, string> logs;
+TCPsocket clientReceived = nullptr;
 
 int main(int argc, char* argv[])
 {
-    if (SDLNet_Init() == -1)
-    {
-        cerr << " SDLNet Initialization error: " << SDLNet_GetError() << '\n';
-        return 1;
-    }
+	char buffer[1024];
+	if (SDLNet_Init() == -1)
+	{
+		cerr << "SDLNet_Init error : " << SDLNet_GetError() << '\n';
+		return 1;
+	}
 
-    IPaddress ip;
-    if (SDLNet_ResolveHost(&ip, nullptr, 4242) == -1)
-    {
-        cerr << " Resolve Host error: " << SDLNet_GetError() << '\n';
-        SDLNet_Quit();
-        return 1;
-    }
+	cout << "Thank you for using ChArtFX !\n";
+	
+	IPaddress ip;
+	if (SDLNet_ResolveHost(&ip, nullptr, 4242) == -1)
+	{
+		cerr<< "Resolve Host error : " << SDLNet_GetError() << '\n';
+		SDLNet_Quit();
+		return 1;
+	}
 
-    TCPsocket serverSocket = SDLNet_TCP_Open(&ip);
-    if (!serverSocket)
-    {
-        cerr << " TCP Open error: " << SDLNet_GetError() << '\n';
-        SDLNet_Quit();
-        return 1;
-    }
+	TCPsocket serverSocket = SDLNet_TCP_Open(&ip);
+	if (!serverSocket)
+	{
+		cerr << "TCP Open error : " << SDLNet_GetError() << '\n';
+		SDLNet_Quit();
+		return 1;
+	}
+	
+	TCPsocket clientSocket = SDLNet_TCP_Accept(serverSocket);
+	vector<TCPsocket> clients = {};
+	while (true)
+	{
+		if (!clientSocket)
+		{
+			clientSocket = SDLNet_TCP_Accept(serverSocket);
+		}
+		else
+		{
+			clients.push_back(clientSocket);
+			int bytesRead = SDLNet_TCP_Recv(clientSocket, buffer, sizeof(buffer));
+			cout << "Client " << buffer << " is connected !" << '\n';
+			logs[clientSocket] = buffer;
 
-    while (true)
-    {
-        TCPsocket clientSocket = SDLNet_TCP_Accept(serverSocket);
-        if (clientSocket)
-        {
-            //thread(HandleClient, clientSocket).detach();
-            UserData userData;
-            userData.socket = clientSocket;
-            {
-                //lock_guard<mutex> lock(mtx);
-                clients.push_back(userData);
-            }
-            SDLNet_AddSocket(set, reinterpret_cast<SDLNet_GenericSocket>(clientSocket));
+			for (auto client : clients)
+			{
+				if (client == clientSocket) break;
+				string message = logs[client] + " is connected";
+				int bytesSent = SDLNet_TCP_Send(client, message.c_str(), message.length() + 1);
+				if (bytesSent < message.length() + 1)
+				{
+					cerr << "SDLNet TCP Send error : " << SDLNet_GetError() << '\n';
+					break;
+				}
+			}
+			clientSocket = nullptr;
+		}
 
-        }
-    }
+		if (!clients.empty())
+		{
+			bool received = false;
+			for (auto client : clients)
+			{
+				if(received) break;
+				SDLNet_SocketSet socketSet = SDLNet_AllocSocketSet(clients.size());
+				SDLNet_AddSocket(socketSet, reinterpret_cast<SDLNet_GenericSocket>(client));
+				if (SDLNet_CheckSockets(socketSet, 10) > 0)
+				{
+					int bytesRead = SDLNet_TCP_Recv(client, buffer, sizeof(buffer));
+					if (bytesRead > 0)
+					{
+						received = true;
+						clientReceived = client;
+						cout << logs[client] << " : " << buffer << '\n';
 
-    SDLNet_TCP_Close(serverSocket);
-    SDLNet_Quit();
-    return 0;
+						/*
+						if (strcmp(buffer, "exit") == 0)
+						{
+							SDLNet_TCP_Close(client);
+							clients.erase(std::remove(clients.begin(), clients.end(), client), clients.end());
+							logs.erase(client);
+							
+							for (auto client : clients)
+							{
+								std::string message = logs[client] + " is disconnected !";
+								int bytesSent = SDLNet_TCP_Send(client, message.c_str(), message.length() + 1);
+								if (bytesSent < message.length() + 1)
+								{
+									cerr << "SDLNet TCP Send error: " << SDLNet_GetError() << endl;
+									break;
+								}
+							}
+						} // missing this last part
+						else received = true;
+						*/
+					}
+				}
+				SDLNet_FreeSocketSet(socketSet);
+			}
+			
+			if (received) 
+			{
+				for (auto client : clients) 
+				{
+					if (client != clientReceived) 
+					{
+						string message = logs[clientReceived]  + " : " + buffer;
+						int bytesSent = SDLNet_TCP_Send(client, message.c_str(), message.length() + 1);
+						if (bytesSent < message.length() + 1)
+						{
+							cerr << "SDLNet TCP Send error: " << SDLNet_GetError() << '\n';
+							break;
+						}
+					}
+				}
+			}
+		}
+	}
+	return 0;
 }
